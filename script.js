@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const navbarLinks = document.querySelectorAll('.navbar ul li a');
-    
+    const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarMenu = document.querySelector('.navbar ul');
+
+// Toggle mobile menu
+navbarToggle.addEventListener('click', function () {
+    navbarMenu.classList.toggle('show');
+});
+
     
     function hideSections() {
         sections.forEach(section => {
