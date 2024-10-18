@@ -51,6 +51,8 @@ header h1 {
     list-style: none;
     display: flex;
     justify-content: center; /* Center align menu items */
+    z-index: 2000;
+    
 }
 
 .navbar ul li {
